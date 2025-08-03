@@ -67,10 +67,11 @@ All LLM development work happens in the `./llm_context` folder:
 3. Suggest alternatives when you see potential issues
 4. Confirm understanding of the task before starting implementation
 
-## Current Status
-- Current Epic: epic-01-dev-setup
-- Phase: Tickets Created (8 tickets ready for implementation)
-- See `/llm_context/current_status.md` for detailed project status
+#### Feedback on Design Docs and Tickets
+- Human feedback will be provided as inline HTML comments: `<!-- COMMENT: your feedback here -->`
+- These comments can appear anywhere in markdown files
+
+
 
 ## Project-Specific Information
 
@@ -81,17 +82,12 @@ All LLM development work happens in the `./llm_context` folder:
 - Cache/Queue: Redis, RabbitMQ
 - Development: Docker Compose, Makefile
 
-### Common Commands (once implemented)
-- `make dev` - Start full development environment
-- `make check` - Run all quality checks
-- `make db-migrate` - Apply database migrations
-- `make docker-logs` - View service logs
 
-### File Locations (planned structure)
-- API endpoints: `backend/app/api/v1/endpoints/`
-- React components: `frontend/src/components/`
-- Database models: `backend/app/db/models/`
-- Background tasks: `backend/app/workers/tasks.py`
+
+## Current Status
+- Current Epic: epic-01-dev-setup
+- Phase: Tickets Created (8 tickets ready for implementation)
+- See `/llm_context/current_status.md` for detailed project status
 
 ## Next Steps
 1. Review created tickets in `/llm_context/implementation/epic-01-dev-setup/tickets/`

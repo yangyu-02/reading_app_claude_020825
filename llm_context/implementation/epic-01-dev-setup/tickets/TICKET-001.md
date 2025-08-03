@@ -32,10 +32,7 @@ reading-app/
 ├── docker/               # Docker configurations
 │   ├── backend/         # Backend Dockerfile
 │   
-│
 ├── bin/                 # Development scripts
-│   ├── setup.sh        # Initial setup script <notes>
-│   └── dev.sh          # Development helper scripts [like what?]
 │
 ├── .github/             # GitHub Actions CI/CD
 │   └── workflows/      # CI/CD pipelines
@@ -51,17 +48,9 @@ reading-app/
 └── README.md           # Project documentation
 ```
 
-## Benefits
-1. **Clear Separation**: Frontend and backend are isolated with their own dependencies
-2. **Shared Resources**: Common configurations can be placed at root level
-3. **Docker Support**: Dedicated docker directory for container configurations
-4. **Development Tools**: bin/ directory for scripts, Makefile for common commands
-5. **LLM Workflow**: Dedicated context directory for AI-assisted development
-6. **Scalability**: Structure allows for easy addition of new services or features
-
 ## Implementation Notes
-- Frontend uses pnpm for package management
-- Backend uses uv for Python dependencies
-- Docker Compose orchestrates local development environment
-- Makefile provides shortcuts for common development tasks
+- Just create the folders
 
+Notes:
+- look at the overall implementation plan for this epic. This first ticket does NOT need to create any thing like fill out the docker compose or create the docker files. it's just setting up the project structure.
+- do not install anything, that comes next, don't even create package.json or requirements.txt files, just the folders.
